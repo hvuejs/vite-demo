@@ -18,7 +18,7 @@ import React, { useState, useMemo } from "react";
  */
 
 function useMemoFn() {
-  
+  const [age, setAge] = useState(0);
   const [num, setNum] = useState(1);
 
   const getDoubleNum = useMemo(() => {
@@ -28,8 +28,14 @@ function useMemoFn() {
   return (
     <div className="hooks-usememo">
       <h2>hooks-useMemo</h2>
-      <button onClick={() => setNum(n => n + 1)}>增加</button>
-      <p>数量：{ getDoubleNum }</p>
+      <div>
+        <button onClick={() => setAge(n => n + 1)}>增加年龄</button>
+        <p>年龄：{ age }</p>
+      </div>
+      <div>
+        <button onClick={() => setNum(n => n + 1)}>增加</button>
+        <p>数量：{ getDoubleNum }</p>
+      </div>
     </div>
   )
 

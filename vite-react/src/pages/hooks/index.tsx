@@ -24,6 +24,7 @@ export default function HooksWrap(props: any) {
         <li>
           <Link to="/hooks/usememo">useMemo</Link>
         </li>
+        <li><Link to='/hooks/suecallback'>useCallback</Link></li>
       </ul>
       { renderRoutes(props.route.routes) }
     </div>

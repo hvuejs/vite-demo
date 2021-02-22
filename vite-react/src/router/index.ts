@@ -3,21 +3,21 @@
  * @Date: 2021-02-20 16:31:15
  * @Description: 
  */
-import AsyncCom from "../config/asyncRouter";
+import AsyncCom from "@/config/asyncRouter";
 
-import Home from "../views/Home";
-import Detail from "../views/Detail";
-import CopyCom from "../views/CopyDemo";
+import Home from "views/Home";
+import Detail from "views/Detail";
+import CopyCom from "views/CopyDemo";
 
-import Demo from "../pages/demo/index";
-import Demo1 from "../pages/demo/1";
-import Demo2 from "../pages/demo/2";
+import Demo from "pages/demo/index";
+import Demo1 from "pages/demo/1";
+import Demo2 from "pages/demo/2";
 import { lazy } from "react";
-const Demo3 = AsyncCom(() =>import("../pages/demo/3"));
+const Demo3 = AsyncCom(() =>import("pages/demo/3"));
 
 // hooks
-import HooksWrap from "../pages/hooks/index";
-import FunctionCom from "../pages/hooks/hooks_function";
+import HooksWrap from "pages/hooks/index";
+import FunctionCom from "pages/hooks/hooks_function";
 
 interface router {
   path:string,
@@ -65,11 +65,11 @@ const routers:Array<router> = [
     routes: [
       {
         path: '/hooks/class',
-        component: lazy(() => import("../pages/hooks/hooks_class")),
+        component: lazy(() => import("pages/hooks/hooks_class")),
       },
       {
         path: '/hooks/effect',
-        component: lazy(() => import("../pages/hooks/hooks_effect")),
+        component: lazy(() => import("pages/hooks/hooks_effect")),
       },
       {
         path: '/hooks/function',
@@ -77,7 +77,11 @@ const routers:Array<router> = [
       },
       {
         path: '/hooks/usememo',
-        component: lazy(() =>import("../pages/hooks/hooks_useMemo")),
+        component: lazy(() =>import("pages/hooks/hooks_useMemo")),
+      },
+      {
+        path: '/hooks/suecallback',
+        component: lazy(() =>import("pages/hooks/hooks_useCallback")),
       },
     ]
   },

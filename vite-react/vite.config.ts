@@ -15,8 +15,13 @@ export default defineConfig({
   plugins: [reactRefresh()],
   resolve: {
     alias: {
-      "@": reslove("./src"),
-      "components": reslove("./src/components"),
+      "@": reslove("src"),
+      "components": reslove("src/components"),
+      "views": reslove("src/views"),
+      "pages": reslove("src/pages"),
+      "utils": reslove("src/utils"),
+      "assets": reslove("src/assets"),
+      "router": reslove("src/router")
     }
   },
   server: {

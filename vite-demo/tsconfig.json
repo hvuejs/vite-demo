@@ -10,6 +10,14 @@
         "noUnusedLocals": true,
         "noImplicitReturns": true,
         "moduleResolution": "node",
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "paths": {
+          "@/*": ["src/*"],
+          "components/*": ["src/components/*"],
+          "views/*": ["src/views/*"],
+          "utils/*": ["src/utils/*"],
+          "assets/*": ["src/assets/*"]
+        }
     }
 }

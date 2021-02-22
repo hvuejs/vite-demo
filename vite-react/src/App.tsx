@@ -17,7 +17,7 @@ const Title = styled.h1`
   text-align: center;
   color: palevioletred; 
 `;
-import routes from "./router/index";
+import routes from "router/index";
 function App() {
   const [count, setCount] = useState(0);
   return (

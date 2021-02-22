@@ -6,7 +6,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue';
 import { resolve } from "path";
-
+declare var __dirname: any;
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
@@ -21,7 +21,7 @@ export default defineConfig({
     }
   },
   server: {
-    port: 8080,
+    port: 8081,
     proxy: { // 进行跨域处理
       '/manage': {
         target:'http://test.api.yunyikang.net',
