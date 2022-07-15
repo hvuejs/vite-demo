@@ -1,27 +1,28 @@
 {
-  "name": "vite-demo",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "dependencies": {
-    "big.js": "^6.1.1",
-    "naive-ui": "^2.27.0",
-    "vue": "^3.2.31",
-    "vue-router": "^4.0.3",
-    "vuex": "^4.0.0"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.1",
-    "@vue/compiler-sfc": "^3.2.31",
-    "node-sass": "^4.14.1",
-    "path": "^0.12.7",
-    "sass": "^1.26.10",
-    "sass-loader": "^10.0.2",
-    "typescript": "^4.6.3",
-    "unplugin-vue-components": "^0.18.5",
-    "vite": "^2.9.1"
-  }
+    "license": "MIT",
+    "description": "a component library for Vue 3 base on happy-ui",
+    "homepage": "",
+    "scripts": {
+        "dev": "pnpm -C ./package/example dev",
+        "build": "pnpm -C ./package/component build",
+        "serve": "pnpm -C ./package/example serve"
+    },
+    "dependencies": {
+        "vue": "^3.2.37"
+    },
+    "peerDependencies": {
+        "vue": "^3.2.37"
+    },
+    "devDependencies": {
+        "@babel/types": "^7.18.8",
+        "@types/node": "^18.0.4",
+        "@vitejs/plugin-vue": "^2.3.3",
+        "path": "^0.12.7",
+        "sass": "^1.26.10",
+        "typescript": "^4.6.4",
+        "unplugin-auto-import": "^0.9.2",
+        "unplugin-vue-components": "^0.21.1",
+        "vite": "^2.9.14",
+        "vue-tsc": "^0.38.4"
+    }
 }

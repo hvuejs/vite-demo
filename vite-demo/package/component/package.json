@@ -1,0 +1,11 @@
+{
+  "name": "happy-ui",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build:es",
+    "build:es": "vite build --emptyOutDir --config ./script/build.es.ts"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  }
+}

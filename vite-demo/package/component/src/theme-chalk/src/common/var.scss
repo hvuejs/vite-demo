@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@use "sass:map";
+
+
+// Types
+$types: primary, success, warning, danger, error, info;
+
+// Color
+$colors: () !default;
+$colors: map.deep-merge(
+    (
+        "white": #FFFFFF,
+        'black': #000000,
+        'primary': (
+            'base': #009688,
+        ),
+        'success': (
+            'base': #67c23a,
+        ),
+        'warning': (
+            'base': #ffb800,
+        ),
+        'danger': (
+            'base': #ff5722,
+        ),
+        'error': (
+            'base': #f56c6c,
+        ),
+        'info': (
+            'base': #1e9fff,
+        )
+    ),
+    $colors
+);
+
+
+$color-white: map.get($colors, 'white') !default;
+$color-black: map.get($colors, 'black') !default;
+$color-primary: map.get($colors, 'primary', 'base') !default;
+$color-success: map.get($colors, 'success', 'base') !default;
+$color-warning: map.get($colors, 'warning', 'base') !default;
+$color-danger: map.get($colors, 'danger', 'base') !default;
+$color-error: map.get($colors, 'error', 'base') !default;
+$color-info: map.get($colors, 'info', 'base') !default;
+
