@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
     "@layui/layui-vue": "^1.2.9",
     "big.js": "^6.1.1",
+    "happy-vue": "workspace:^0.0.1",
     "naive-ui": "^2.27.0",
     "pinia": "^2.0.16",
     "vue": "^3.2.37",

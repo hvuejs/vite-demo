@@ -1,5 +1,11 @@
 node_modules
 .DS_Store
+
 dist
+es
+lib
+umd
+types
+
 *.local
 .vscode

@@ -1,6 +1,6 @@
 export type ButtonNativeType = "button" | "submit" | "reset";
 
-export type ButtonType = "primary" | "success" | "normal" | "warning" | "danger" | "error";
+export type ButtonType = "normal" | "primary" | "success" | "warning" | "danger" | "error";
 
 export type ButtonSize = "lg" | "sm" | "xs"
 

@@ -3,7 +3,8 @@
         <div>
             <router-link to="/login">登录</router-link> | 
             <router-link to="/layui-vue">LayuiVue</router-link> |
-            <router-link to="/naive-ui">NaiveUi</router-link>
+            <router-link to="/naive-ui">NaiveUi</router-link> |
+            <router-link to="/happy-vue">happyVue</router-link>
         </div>
         <hello-world msg="Hello Vue 3.0 + Vite" />
         <input type="text" v-focus placeholder="ceshi" />

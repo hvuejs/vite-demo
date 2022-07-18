@@ -1,5 +1,5 @@
 import { withInstall, WithInstallPlugin } from "../../utils"
-import Component from "./src/button.vue";
+import Component from "./button.vue";
 
 const component: WithInstallPlugin<typeof Component> = withInstall(Component)
 

@@ -32,6 +32,11 @@ const routes: RouteRecordRaw[] = [
             }
         ]
     },
+    {
+        path: "/happy-vue",
+        name: "HappyVue",
+        component: () => import("views/HappyVue/index.vue")
+    }
 ];
 const router = createRouter({
     history,
