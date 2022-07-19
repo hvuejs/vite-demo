@@ -5,6 +5,8 @@ export default {
 </script>
 
 <script lang="ts" setup>
+import "./button.scss";
+
 import { computed } from "vue";
 import { ButtonNativeType, ButtonType, ButtonSize, ButtonEmits } from "./interface";
 

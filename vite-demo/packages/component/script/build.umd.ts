@@ -16,7 +16,8 @@ export default defineConfig({
     // 配置别名
     resolve: {
         alias: {
-            "@": resolve(process.cwd(), "./"),
+            "@": resolve(__dirname, "src"),
+            "@happy-vue": resolve(__dirname, "src/theme-chalk")
         },
     },
     build: {

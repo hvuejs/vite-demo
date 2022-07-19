@@ -12,7 +12,8 @@
         "esModuleInterop": true,
         "baseUrl": ".",
         "paths": {
-            "@/*": ["src/*"]
+            "@/*": ["src/*"],
+            "@theme/*": ["src/theme-chalk/*"]
         },
         "declaration": true,
         "declarationDir": "types",

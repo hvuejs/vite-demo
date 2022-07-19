@@ -6,16 +6,12 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
-import dts from "vite-plugin-dts";
 
 const inputDir = resolve(process.cwd(), "./src/components");
 
 export default defineConfig({
     plugins: [
-        vue(),
-        dts({
-            outputDir: "types",
-        }),
+        vue()
     ],
     // 配置别名
     resolve: {
@@ -26,17 +22,17 @@ export default defineConfig({
     },
     build: {
         target: "modules",
-        outDir: "es",
-        assetsDir: "theme-chalk",
+        outDir: "lib",
         // 压缩
         minify: true,
         // css 分离
-        cssCodeSplit: true,
+        cssCodeSplit: false,
         emptyOutDir: true,
         lib: {
             entry: inputDir,
             name: "HappyVue",
             formats: ["es"],
+            fileName: () => "index.js"
         },
         terserOptions: {
             compress: {
@@ -57,24 +53,7 @@ export default defineConfig({
                 globals: {
                     vue: "Vue",
                 },
-                // format: "es",
-                chunkFileNames: ({ name }) => {
-                    console.log(name)
-                    return name === "index" ? 'index.js' : '[name].js'
-                },
-                //不用打包成.es.js,这里我们想把它打包成.js
-                entryFileNames: ({ name }) => {
-                    console.log('22', name)
-                    return name === "index" ? 'index.js' : '[name].js'
-                },
-                //让打包目录和我们目录对应
-                preserveModules: true,
-                //配置打包根目录
-                dir: "es",
-                preserveModulesRoot: "src",
-                assetFileNames: ({ name }) => {
-                    return name === "index" ? 'theme-chalk/index.css' : 'theme-chalk/[name].css'
-                }
+                assetFileNames: "index.css"
             },
         },
     },
