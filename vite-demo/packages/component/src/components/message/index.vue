@@ -5,7 +5,7 @@ export default {
 </script>
 
 <script lang="ts" setup>
-import "./index.scss";
+import "./index.less";
 
 import { computed, useSlots, VNodeTypes } from "vue";
 import Title from "./Title.vue"

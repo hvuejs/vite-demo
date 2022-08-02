@@ -1,4 +1,7 @@
 import { App } from "vue";
+
+import "./theme/index.less";
+
 import Button from "./components/button/index";
 import Badge from "./components/badge/index"
 // import Message from "./components/message/index";

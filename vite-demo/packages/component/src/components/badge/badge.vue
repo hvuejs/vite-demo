@@ -5,7 +5,7 @@ export default {
 </script>
 
 <script lang="ts" setup>
-import "./badge.scss";
+import "./index.less";
 import { computed, StyleValue } from "vue";
 
 export type HyBadgeProps = {

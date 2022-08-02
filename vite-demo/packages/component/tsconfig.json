@@ -1,9 +1,10 @@
 {
     "compilerOptions": {
-        "target": "ES2015",
-        "module": "esnext",
+        "target": "ESNext",
+        "module": "ESNext",
         "jsx": "preserve",
-        "lib": ["ESNext", "DOM"],
+        "lib": ["esnext", "dom"],
+        "skipLibCheck": true,
         "sourceMap": true,
         "strict": true,
         "noUnusedLocals": true,
@@ -15,8 +16,6 @@
             "@/*": ["src/*"],
             "@theme/*": ["src/theme-chalk/*"]
         },
-        "declaration": true,
-        "declarationDir": "types",
         "suppressImplicitAnyIndexErrors": true
     },
     "include": ["src/**/*", "src/**/*.d.ts", "script/**/*.ts"],
