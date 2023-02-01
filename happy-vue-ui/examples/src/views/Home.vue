@@ -15,7 +15,6 @@
 import HelloWorld from "../components/HelloWorld.vue";
 const vFocus = {
     mounted(el: HTMLElement) {
-        console.log(el);
         el.focus();
     },
 };

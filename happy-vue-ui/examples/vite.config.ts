@@ -37,11 +37,7 @@ export default defineConfig({
         port: 8081,
         proxy: {
             // 进行跨域处理
-            "/manage": {
-                target: "http://test.api.yunyikang.net",
-                changeOrigin: true,
-                // rewrite: (path) => path.replace(/^\/api/, '')
-            },
+            "/hospital": "https://general-api.cloudsmed.cn/"
         },
     }
 });
